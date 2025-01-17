@@ -5,9 +5,11 @@ import AdminPanel from "./components/AdminPanel";
 import "./styles.css";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import Footer from "./components/Footer";
 
 function App() {
   return (
+    <>
     <Router>
       <Routes>
         <Route path="/" element={<FeedbackForm />} />
@@ -16,6 +18,8 @@ function App() {
         <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
+    <Footer />
+    </>
   );
 }
 export default App;
